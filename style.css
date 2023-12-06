@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root{
+    --green: #567C6D;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1,h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+}
+
+h1 {
+    
+    text-transform: uppercase;
+}
+
+h2{
+    color: var(--green);
+    font-weight: 400;
+    font-size: 2rem;
+    position: relative;
+}
+
+h2 span {
+    opacity: 0.3;
+    position: absolute;
+    font-size: 8rem;
+    top: -4rem;
+    left: -2.4rem;
+}
+
+div.header-navs {
+display: grid;
+align-items: center;
+grid-template-columns: 1fr 1fr 1fr ;
+}
+
+header {
+    padding: 20px;
+}
+
+div.header-navs a{
+    color: var(--green);
+    text-decoration: none;
+}
+
+div.header-navs nav a{
+   margin: 0 4px; 
+}
+
+div.header-navs a.logo {
+ text-align: center;
+ font-family: serif;
+ font-size: 3rem;
+}
+
+div.header-navs nav:nth-child(3){
+    text-align: right;
+    
+}
+
+div.cta {
+    background-image: url('./images/cta.jpg');
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+div.cta div.content{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 100px 100px;
+}
+
+div.cta div.content p{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+
+
+div.cta div.content h1{
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+div.cta div.content a.btn{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 14px 30px;
+    text-transform: uppercase;
+}
