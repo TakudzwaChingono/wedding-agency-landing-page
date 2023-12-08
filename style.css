@@ -84,6 +84,12 @@ div.cta {
     text-align: center;
 }
 
+@media screen and (max-width:700px){
+    div.cta div.content{
+        padding: 80px 20px;
+    }
+}
+
 div.cta div.content{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 100px 100px;
@@ -119,6 +125,7 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 50px;
 align-items: center;
+padding: 0 20px;
 
 }
 
@@ -126,6 +133,13 @@ section#about p{
     color: #555555;
     margin: 20px 0;
 }
+
+@media screen and (max-width:700px){
+    section#about{
+        grid-template-columns: 1fr;
+    }
+}
+
 
 div.services{
     display: grid;
@@ -148,6 +162,17 @@ a.service{
     scroll-snap-align: start;
 }
 
+
+@media screen and (max-width:700px){
+    div.services{
+        gap:20px;
+    }
+    a.service{
+        width: 140px;
+    }
+}
+
+
 a.service h3{
     text-align: center;
     color: #555;
@@ -159,6 +184,65 @@ position: relative;
 top: 40px;
 }
 
+section#stages{
+    padding: 0 20px;
+}
+
 section#stages h2{
     text-align: center;
+}
+
+div.stage {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px ;
+}
+
+@media screen and (max-width:700px){
+    div.stage{
+        grid-template-columns: 1fr;
+    }
+}
+
+div.stage ol {
+    list-style-type: none;
+}
+
+div.stage ol li{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+div.stage ol li h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#555
+}
+
+div.stage ol li span{
+    clear: both;
+    float: left;
+    font-size: 5rem;
+    line-height: 3.6rem;
+    display: inline-block;
+    padding:0px 30px 20px 0px;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif; 
+    opacity: 0.2;
+    color: var(--green);
+
+}
+
+div.stage p{
+    color:#555;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+@media screen  and (min-width:600px) {
+    div.stage:nth-child(odd) ol{
+        order:5;
+    }
 }
